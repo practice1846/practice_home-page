@@ -1,0 +1,35 @@
+// @import "../_color.scss";
+@import "../color";
+body{
+    main{
+        & > section{
+            article{
+                header.page-header{
+                    margin-top: 60px;
+                    overflow: hidden;
+                    h1.page-title{
+                        font-size: 30px;
+                        margin: 80px 160px 0 !important;
+                        border-bottom: 3px solid rgb(29, 161, 242);
+                    }
+                }
+                & > section.entry-content{
+                    .about-phase{
+                        margin: 40px 80px 40px;
+                        padding-left: 80px;
+                        h2{
+                            // color: red;
+                            color: $navigation-bgcolor;
+                        }
+                    }
+                    pre{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #sidebar{
+        display: none;
+    }
+}

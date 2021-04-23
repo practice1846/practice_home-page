@@ -1,0 +1,111 @@
+// @import "../_color.scss";
+@import "../color";
+// @import url("../color");
+
+body{
+    background: $navigation-bgcolor;
+    main{
+        & > section{
+            article{
+                header.page-header{
+                    margin-top: 60px;
+                    overflow: hidden;
+                    h1.page-title{
+                        color: #fff;
+                        font-size: 30px;
+                        margin: 80px 160px 0 !important;
+                        border-bottom: 3px solid rgb(29, 161, 242);
+                        -webkit-text-stroke: 1px #403d39;
+                    }
+                }
+                & > section.entry-content{
+                    .aboutPhase{
+                        margin: 80px;
+                        padding-left: 80px;
+                        .about-phase{
+                            .about-phase-item{
+                                position: relative;
+                                margin-bottom: 40px;
+                                transition: 0.5s;
+                                &:before {
+                                    position: absolute;
+                                    top: 14px;
+                                    left: 14px;
+                                    width: 100%;
+                                    height: 100%;
+                                    content: '';
+                                    background: #f5f5f5;
+                                    z-index: -10;
+                                    transition: 0.5s;
+                                }
+                                h2{
+                                    color: #fff;
+                                    width: 200px;
+                                    // color: $navigation-bgcolor;
+                                    position: relative;
+                                    padding: 1rem 2rem calc(1rem + 10px);
+                                    background: #1da1f2;
+                                    &:before {
+                                        position: absolute;
+                                        top: -7px;
+                                        left: -7px;
+                                        width: 100%;
+                                        height: 100%;
+                                        content: '';
+                                        // border: 4px solid #403d39;
+                                        border: 4px solid #4b4237;
+                                    }
+                                }
+                                p{
+                                    font-size: 20px;
+                                    font-weight: 500;
+                                    // color: white;
+                                    color: $service_hover;
+                                    display: flex;
+                                    padding: 20px 40px 40px 80px;
+                                }
+                                &:hover{
+                                    // background: #000;
+                                    &:before{
+                                        background: $service_hover;
+                                    }
+                                    h2{
+                                        color: #fff;
+                                    }
+                                    p{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        .about-phase01{
+                            padding: 7px 0 0 7px;
+                            .about-phase-item{
+                                // background: #f5f5f5;
+                                
+                                h2{
+                                    
+                                }
+                                p{
+                                    
+                                }
+                            }
+                        }
+                        .about-phase02{
+                            padding: 7px 0 0 7px;
+                        }
+                        .abour-phase03{
+                            padding: 7px 0 0 7px;
+                        }
+                    }
+                    pre{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #sidebar{
+        display: none;
+    }
+}
